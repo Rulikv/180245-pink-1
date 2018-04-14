@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конкурс от Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Пинк»">
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__link main-nav__link--active" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-main__contest contest">
+        <div class="contest__intro">
+          <div class="contest__wrapper">
+            <h1 class="contest__main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          </div>
+            <h2 class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <!--Пожалуйста, заполните форму ниже:--></h2>
+        </div>
+        <form class="contest__form form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__block">
+            <fieldset class="form__fields fields-text">
+              <label class="fields-text__subtitle" for="surname">Фамилия:</label>
+                <input class="fields-text__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
+              <label class="fields-text__subtitle" for="name">Имя:</label>
+                <input class="fields-text__input" id="name" type="text" name="name" placeholder="Введите ваше имя *">
+              <label class="fields-text__subtitle" for="patronymic">Отчество:</label>
+                <input class="fields-text__input" id="patronymic" type="text" name="name" placeholder="Ну и отчество тоже">
+            </fieldset>
+          </div>
+          <div class="form__block">
+            <fieldset class="form__fields fields-toggle">
+              <div class="fields-toggle__wrapper">
+                <h3 class="fields-toggle__title">Ваши безбашенные достижения в путешествии</h3>
+                <ul class="fields-toggle__list">
+                  <li class="fields-toggle__item fields-toggle__item--checked">
+                    <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-shark" value="achievements-shark" checked>
+                      <label class="fields-toggle__subtitle" for="achievements-shark">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="fields-toggle__item fields-toggle__item--checked">
+                    <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-burned" value="achievements-burned" checked>
+                      <label class="fields-toggle__subtitle" for="achievements-burned">Обгорел на пляже</label>
+                  </li>
+                  <li class="fields-toggle__item">
+                    <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-celebrity" value="achievements-celebrity">
+                      <label class="fields-toggle__subtitle" for="achievements-celebrity">Видел Чака Норриса</label>
+                  </li>
+                  <li class="fields-toggle__item">
+                    <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-souvenirs" value="achievements-souvenirs">
+                      <label class="fields-toggle__subtitle" for="achievements-souvenirs">Накупил сувениров</label>
+                  </li>
+                  <li class="fields-toggle__item fields-toggle__item--checked">
+                    <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-tower" value="achievements-tower" checked>
+                      <label class="fields-toggle__subtitle" for="achievements-tower">Удержал башню</label>
+                  </li>
+                  <li class="fields-toggle__item">
+                    <input class="fields-toggle__input" type="checkbox" name="achievements" id="achievements-hotel" value="achievements-hotel">
+                      <label class="fields-toggle__subtitle" for="achievements-hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__block">  
+            <fieldset class="form__fields fields-text">
+              <label class="fields-text__subtitle" for="phone">Номер телефона</label>
+                <input class="fields-text__input" id="phone" type="text" name="phonee" placeholder="Номер, пожалуйста">
+              <label class="fields-text__subtitle" for="email">Адрес почты</label>
+                <input class="fields-text__input" id="email" type="text" name="email" placeholder="Введите почту *">
+            </fieldset>
+          </div>
+          <div class="form__block">
+            <fieldset class="form__fields fields-toggle">
+              <div class="fields-toggle__wrapper">
+                <h3 class="fields-toggle__title">С каким приложением путешествовали?</h3>
+                <ul class="fields-toggle__list">
+                  <li class="fields-toggle__item fields-toggle__item--checked">
+                    <input class="fields-toggle__input" type="radio" name="app" id="app-ios" value="app-ios" checked>
+                      <label class="fields-toggle__subtitle" for="app-ios">Pink для iOS</label>
+                  </li>
+                  <li class="fields-toggle__item">
+                    <input class="fields-toggle__input" type="radio" name="app" id="app-android" value="app-android">
+                      <label class="fields-toggle__subtitle" for="app-android">Pink на Android</label>
+                  </li>
+                  <li class="fields-toggle__item">
+                    <input class="fields-toggle__input" type="radio" name="app" id="app-windows" value="app-windows">
+                      <label class="fields-toggle__subtitle" for="app-windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__block">
+            <fieldset class="form__fields fields-text">
+              <legend class="fields-toggle__title">Опишите свои эмоции</legend>
+              <textarea class="fields-text__input" name="emotions" id="emotions" rows="5" cols="22">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </fieldset>
+          </div>
+          <section class="form__submit">
+            <button class="form__send button" type="submit">Отправить форму</button>
+            <small class="form__legend form__legend--top">
+              <sup>*</sup> — обязательные поля
+            </small>
+            <!--<div class="contest__popup contest__popup--failure">
+              <b class="contest__alert">Что-то пошло не так!</b>
+              <p class="contest__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+              <button class="contest__confirmation" type="button">ОК</button>
+            </div>
+            <div class="contest__popup contest__popup--submitted">
+              <b class="contest__alert">Ваша заявка отправлена</b>
+              <p class="contest__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+              <button class="contest__confirmation" type="button">Закрыть окно</button>
+            </div>-->
+          </section>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <img class="page-footer__logo-image" src="http://placehold.it/280x62" width="280" height="62" alt="Приложение «Пинк»">
+        <div class="page-footer__social social">
+          <a class="social__item social__item--twitter" href="#">Пинк в Твиттере</a>
+          <a class="social__item social__item--facebook" href="#">Пинк в Фейсбуке</a>
+          <a class="social__item social__item--youtube" href="#">Пинк на Ютьюбе</a>
+        </div>
+        <div class="page-footer__developer developer">
+          <p class="developer__text">Разработано HTML Academy</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
