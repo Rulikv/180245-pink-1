@@ -1,0 +1,54 @@
+.price {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  background-color: @underlayer-color;
+}
+
+.price__wrapper {
+  .container;
+}
+
+.price__list {
+  width: 280px * 3;
+  margin: 0 auto;
+  border-collapse: collapse;
+  transform: translateX(-33.33%);
+  text-align: left;
+  background-color: @bg-color;
+
+  .outline(green);
+}
+
+.price__item {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  background-color: @base-color;
+  text-align: center;
+}
+
+.price__title {
+  margin: 0;
+  margin-bottom: 5px;
+  .text(bold; @medium; @x-large; @bg-color; uppercase);
+  .outline(yellow);
+}
+
+.price__value {
+  margin: 0;
+  .text(light; @large; @x-large; @bg-color; uppercase);
+  .outline(pink);
+}
+
+.price__option {
+  padding-top: 18px;
+  padding-bottom: 15px;
+  padding-left: 24px;
+  border: 2px solid @special-color;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.price__toggles {
+  margin-top: 37px;
+  text-align: center;
+}
