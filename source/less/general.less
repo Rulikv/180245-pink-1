@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0 auto;
+  font-family: @font-family;
+  font-weight: normal;
+  font-size: @small;
+  line-height: @large;
+  color: @contrast-color;
+  background-color: @bg-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+}
+
+.container {
+  .container;
+}
+
+.button {
+  display: inline-block;
+  width: 280px;
+  padding: 16px 30px;
+  border: 3px solid @base-color;
+  border-radius: 55px;
+  .text(bold; @medium; @medium; inherit);
+  font-family: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.contest {
+  margin: 0;
+  padding: 0;
+  color: @base-color;
+  background-color: @bg-color;
+}
+
+.contest__intro {
+  color: @bg-color;
+}
+
+.contest__wrapper {
+  background-color: @base-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: repeat;
+  background-position: center bottom;
+}
+
+.contest__main-title {
+  .container;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 52px;
+  .text(light; @large; @x-large; @bg-color);
+  text-align: center;
+
+  .outline(yellow);
+}
+
+.contest__description {
+  .container;
+  padding-top: 42px;
+  .text(normal; @small; @x-large; @base-color);
+  text-align: center;
+  background-color: @bg-color;
+
+  .outline(yellow);
+}

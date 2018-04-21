@@ -1,0 +1,57 @@
+.post {
+  .container;
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: @underlayer-color;
+
+  .outline(green);
+}
+
+.post__image:not(.post__image--panorama) {
+  min-width: 280px;
+  min-height: 180px;
+
+  .outline(green);
+}
+
+.post__image--panorama {
+  min-width: 320px;
+  min-height: 137px;
+  margin-left: -20px;
+}
+
+.post__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  .text(bold; @x-small; @large; @bg-color; uppercase);
+  background-color: @vivid-color;
+}
+
+.post__info {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  color: @base-color;
+}
+
+.post__author {
+  margin: 0;
+  padding: 0;
+  .text(bold; @small; @large);
+}
+
+.post__time {
+  .text(light; @x-small; @large; @base-color; uppercase);
+}
+
+.post__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  .text(normal; @small; @large);
+}

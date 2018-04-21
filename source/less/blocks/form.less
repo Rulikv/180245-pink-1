@@ -1,0 +1,40 @@
+.form {
+  padding-top: 15px;
+  background-color: @bg-color;
+}
+
+.form__fields {
+  .fieldset-reset;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  .outline(blue);
+}
+
+.form__submit {
+  .container;
+  margin-top: 40px;
+}
+
+.form__send {
+  margin-bottom: 30px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  color: @bg-color;
+  background-color: @button-color;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.form__legend {
+  margin-left: 50px;
+  .text(normal; @small; @x-large; @base-color; uppercase);
+
+  .outline(grey);
+}
+
+.form__legend sup {
+  color: @vivid-color;
+}
